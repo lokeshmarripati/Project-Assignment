@@ -1,0 +1,100 @@
+/* General styles */
+/* body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); Soft gradient background
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  } */
+  
+  .Questions-choose {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    width: 100vw; /* Full viewport width */
+    /* background-image: url('https://img.freepik.com/premium-vector/quiz-isometric-design-icon-vector-web-illustration-3d-colorful-concept_697410-2132.jpg?size=626&ext=jpg&ga=GA1.1.274283371.1727283951&semt=ais_hybrid'); */
+    background-size: cover; /* Makes the background cover the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    z-index: 0; /* Keeps the background behind other elements */
+}
+  /* Container for the technology selection */
+  .technology-container {
+    background-color: white;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    max-width: 600px;
+    text-align: center;
+    perspective: 1000px; /* Enable 3D perspective */
+    transform: translateZ(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .technology-container:hover {
+    transform: scale(1.02) rotateY(5deg); /* Slight 3D tilt and zoom on hover */
+  }
+  
+  /* Title styling */
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    animation: fadeInDown 1s ease; /* Fading and sliding down effect */
+  }
+  
+  /* List styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual buttons for each technology */
+  li {
+    margin-bottom: 1rem;
+  }
+  
+  li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .tech-button {
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Button gradient */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    transform: perspective(500px) translateZ(0);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 3D hover effect on buttons */
+  .tech-button:hover {
+    transform: translateY(-10px) scale(1.05); /* Button lift and grow */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    background: linear-gradient(135deg, #ff758c, #ff7eb3); /* Lighter gradient on hover */
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

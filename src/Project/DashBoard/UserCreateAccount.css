@@ -1,0 +1,138 @@
+/* Basic Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   */
+  /* Container Styles */
+  .User-create-background{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw; /* Full viewport width */
+    background-image: url('https://png.pngtree.com/background/20240507/original/pngtree-contemporary-authentic-3d-renderings-of-web-login-page-templates-picture-image_8832124.jpg');
+    background-size: cover; /* Makes the background cover the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    z-index: 0;
+   }
+  .create-account-container {
+    /* background-color: #ecf1f5; */
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    width: 700px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(225, 39, 39, 0.1);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+  
+  /* Title Styling */
+  .create-account-title {
+    font-size: 28px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: slideIn 0.6s ease-in-out forwards;
+  }
+  
+  /* Form Styling */
+  .create-account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label-user {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .form-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Preview Image Styles */
+  .preview-container {
+    margin-top: 20px;
+  }
+  
+  .preview-title {
+    font-size: 18px;
+    color: #ecf1f5;
+    margin-bottom: 10px;
+  }
+  
+  .preview-image {
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+  }
+  
+  /* Button Container and Button Styling */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .submit-button, .back-to-login-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.2);
+  }
+  
+  .submit-button:hover, .back-to-login-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    background-color: #0056b3;
+    box-shadow: 0 10px 15px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

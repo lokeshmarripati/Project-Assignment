@@ -1,0 +1,126 @@
+
+.user-profile-containers {
+    font-family: 'Poppins', Arial, sans-serif;
+    padding: 20px;
+    perspective: 1200px;
+    background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.user-profile-container:hover {
+    transform: rotateY(15deg); 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.title {
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    animation: titleBounce 1.5s ease-in-out;
+}
+
+@keyframes titleBounce {
+    0% { transform: translateY(-50px); opacity: 0; }
+    50% { transform: translateY(10px); opacity: 0.8; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.no-users {
+    text-align: center;
+    color: #777;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    animation: fadeInTable 1s ease-in-out;
+}
+
+@keyframes fadeInTable {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    transition: background-color 0.4s ease;
+}
+
+.user-table th {
+    background-color: #4a4a4a;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.user-table td:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+
+.user-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d; 
+}
+
+.user-image:hover {
+    transform: rotateY(360deg) scale(1.15); 
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); 
+}
+
+.user-name, .user-email, .user-address {
+    font-weight: bold;
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.user-table td {
+    background: linear-gradient(135deg, #fafafa 30%, #f0f0f0);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-table tr:hover td {
+    background: linear-gradient(135deg, #f2f2f2 30%, #e2e2e2);
+}
+
+
+.no-scores {
+    color: #e74c3c;
+    text-align: center;
+    font-style: italic;
+}
+
+.user-table tr:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    transition: background-color 0.3s ease;
+}
+.back-account-button{
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #ff595e;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}

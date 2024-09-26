@@ -1,0 +1,117 @@
+
+.form-background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw; /* Full viewport width */
+    background-image: url('https://img.freepik.com/premium-vector/quiz-isometric-design-icon-vector-web-illustration-3d-colorful-concept_697410-2132.jpg?size=626&ext=jpg&ga=GA1.1.274283371.1727283951&semt=ais_hybrid');
+    background-size: cover; /* Makes the background cover the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    z-index: 0; /* Keeps the background behind other elements */
+}
+
+/* Ensuring the form container stays above the background */
+.question-form-container1 {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px auto;
+    width: 350px;
+    background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect for a 3D "pop" */
+.question-form-container1:hover {
+    transform: scale(1.05);
+}
+
+/* Title styling */
+.form-title1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels for inputs */
+.form-label1 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Select and Input field styles */
+.form-input1 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: #f0f0f0;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for form input */
+.form-input1:hover,
+.form-input1:focus {
+    background: #e0e0e0;
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1), inset -3px -3px 6px rgba(255, 255, 255, 0.4);
+}
+
+/* Submit button styling */
+.submit-btn1 {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: linear-gradient(145deg, #e6e6e6, #c4c4c4);
+    border-radius: 20px;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Hover and active effects on button */
+.submit-btn1:hover {
+    background: linear-gradient(145deg, #d6d6d6, #b4b4b4);
+}
+
+.submit-btn1:active {
+    transform: translateY(3px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Animation effect for form labels */
+.form-label1 {
+    animation: fadeIn 0.5s ease-in-out both;
+}
+
+/* Keyframes for label fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

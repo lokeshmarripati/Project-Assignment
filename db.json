@@ -1,0 +1,243 @@
+{
+  "images": [
+    {
+      "id": "f068",
+      "email": "anua00948@gmail.com",
+      "password": "Anusha",
+      "address": "VenkatagiriKota",
+      "imageUrl": "http://localhost:3000/images/crush6.jpg"
+    },
+    {
+      "id": "618b",
+      "name": "Marripati Lokesh",
+      "email": "marripatilokesh93@gmail.com",
+      "password": "Lokesh",
+      "address": "Piler",
+      "jobId": "1234",
+      "imageUrl": "http://localhost:3000/images/fri.jpg"
+    },
+    {
+      "id": "1477",
+      "name": "Anusha",
+      "email": "anua00948@gmail.com",
+      "password": "Anu",
+      "address": "Vizag",
+      "jobId": "12345",
+      "imageUrl": "http://localhost:3000/images/Anusha.png"
+    },
+    {
+      "id": "3dfb",
+      "name": "Lokesh M",
+      "email": "marripatilokesh237@gmail.com",
+      "password": "Lokesh237@",
+      "address": "Kadapa",
+      "jobId": "5678",
+      "imageUrl": "http://localhost:3000/images/img.jpg"
+    },
+    {
+      "id": "f018",
+      "name": "Deepthi",
+      "email": "deepthichandrala@gmail.com",
+      "password": "Deepthi123",
+      "address": "Krsihna ",
+      "jobId": "9876",
+      "imageUrl": "http://localhost:3000/images/Krishna.jpg"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "1",
+      "name": "HTML"
+    },
+    {
+      "id": "2",
+      "name": "CSS"
+    },
+    {
+      "id": "3",
+      "name": "React"
+    }
+  ],
+  "questions": [
+    {
+      "id": "0faf",
+      "technology": "HTML",
+      "questions": [
+        {
+          "question": "How to define P tag in HTML?",
+          "options": [
+            "<p>",
+            "p",
+            "</p>",
+            "<p/>"
+          ],
+          "answer": "<p>"
+        }
+      ]
+    },
+    {
+      "id": "3a83",
+      "technology": "HTML",
+      "questions": [
+        {
+          "question": "",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "d552",
+      "technology": "CSS",
+      "questions": [
+        {
+          "question": "What is CSS ?",
+          "options": [
+            "Cascading Style Sheet",
+            "Cascading Sheet Style",
+            "Cost Style Sheet",
+            "Cost Sheet Style"
+          ],
+          "answer": "Cascading Style Sheet"
+        },
+        {
+          "question": "How many types of selectors?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "7"
+          ],
+          "answer": "7"
+        },
+        {
+          "question": "How To Declare Class Selector ?",
+          "options": [
+            ".",
+            "*",
+            "#",
+            "<Tagname>"
+          ],
+          "answer": "."
+        },
+        {
+          "question": "How to identify ID Selector?",
+          "options": [
+            ".",
+            "#",
+            "*",
+            "<Tagname>"
+          ],
+          "answer": "#"
+        },
+        {
+          "question": "Which is not block level element ?",
+          "options": [
+            "<div>",
+            "<p>",
+            "br",
+            "<a>"
+          ],
+          "answer": "<a>"
+        },
+        {
+          "question": "How to Give the border radios in Html elements? ",
+          "options": [
+            "border-radios:0px;",
+            "border_radios:10px;",
+            "borderradios:2px;",
+            "radios:10px;"
+          ],
+          "answer": "border-radios:0px;"
+        }
+      ]
+    },
+    {
+      "id": "ed53",
+      "technology": "JavaScript",
+      "questions": [
+        {
+          "question": "",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": ""
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "f0ef",
+      "userId": 1,
+      "technology": "CSS",
+      "score": 1,
+      "totalQuestions": 1
+    },
+    {
+      "id": "393f",
+      "userId": 1,
+      "technology": "CSS",
+      "score": 1,
+      "totalQuestions": 1
+    },
+    {
+      "id": "5783",
+      "userId": 1,
+      "technology": "CSS",
+      "score": 1,
+      "totalQuestions": 1
+    }
+  ],
+  "users": [
+    {
+      "id": "8708",
+      "name": "Marripati Lokesh",
+      "email": "marripatilokesh93@gmail.com",
+      "password": "Lokesh93@",
+      "address": "Andhra Pradesh",
+      "imageUrl": "http://localhost:3000/images/Friend.jpg",
+      "score": [],
+      "scores": [
+        {
+          "technology": "CSS",
+          "score": 1,
+          "totalQuestions": 1
+        },
+        {
+          "technology": "HTML",
+          "score": 1,
+          "totalQuestions": 1
+        }
+      ]
+    },
+    {
+      "id": "94a7",
+      "name": "Nandu",
+      "email": "nandu123@gmail.com",
+      "password": "nandu123@",
+      "address": "Piler",
+      "imageUrl": "http://localhost:3000/images/Friends.jpg",
+      "scores": [
+        {
+          "technology": "CSS",
+          "score": 1,
+          "totalQuestions": 1
+        },
+        {
+          "technology": "HTML",
+          "score": 1,
+          "totalQuestions": 1
+        }
+      ]
+    }
+  ]
+}
