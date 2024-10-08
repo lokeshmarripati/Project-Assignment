@@ -1,11 +1,4 @@
-/* Basic Reset */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } */
-  
-  /* Container Styles */
+
   .Login-background{
     position: relative;
     display: flex;
@@ -13,41 +6,79 @@
     align-items: center;
     min-height: 100vh;
     width: 100vw; /* Full viewport width */
-    background-image: url('https://t4.ftcdn.net/jpg/06/91/05/19/360_F_691051962_GFhQPOAXABmf7l706q89b2PFh6FnB1kI.jpg');
+    background-image: url('https://miro.medium.com/v2/resize:fit:1024/1*bq8x2rFSbkoK2Bj6FECt2g.png');
     background-size: cover; /* Makes the background cover the entire container */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Ensures the image does not repeat */
     z-index: 0;
    }
-  .navbar {
-    background-color: #333;
+   .navbar1 {
+    /* background-color: #b5b1b1eb; */
+    background-color: #d4d4d4eb;
     padding: 1rem;
+    /* Adding 3D effect using box-shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    /* Adding a slight perspective to the entire navbar */
+    perspective: 800px;
   }
   
-  .navbar-links {
+  .navbar1-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
   }
-  
-  .navbar-links li {
-    margin-right: 1.5rem;
-  }
-  
-  .navbar-links a {
-    text-decoration: none;
+  .navbar1-logo {
+    font-size: 2rem;
+    cursor: pointer;
     color: white;
-    font-size: 1.2rem;
+    font-weight: bold;
+   
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    margin-left: 3rem;
+  
+    transform: perspective(500px) translateZ(15px);
+    transition: transform 0.3s ease, color 0.3s ease;
   }
   
-  .navbar-links a:hover {
-    text-decoration: underline;
+  .navbar1-logo:hover {
+    transform: perspective(500px) translateZ(20px);
+    color: #4a9adb; 
   }
+  
+  .navbar1-links li {
+    margin-right: 1.5rem;
+    margin-top: -50px;
+  }
+  
+  .navbar1-links a {
+    text-decoration: none;
+    color: rgb(243, 112, 154);
+    background-color: seashell;
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: perspective(500px) translateZ(10px);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar1-links a:hover {
+    text-decoration: none;
+    transform: perspective(500px) translateZ(15px);
+    color: #5ca5ca; 
+  }
+  
+  .navbar1-links li:hover {
+    /* text-decoration: underline; */
+    transform: perspective(500px) translateZ(15px);
+  }
+  
   
   .login-containers {
-    background-color: #676767;
+    background-color: #b5b1b1eb;
     padding: 40px;
     width: 400px;
     margin: 50px auto;
@@ -57,7 +88,7 @@
     animation: fadeIn 0.8s ease-in-out forwards;
   }
   
-  /* Title Styling */
+  
   .login-title {
     font-size: 28px;
     color: #343a40;

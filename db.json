@@ -238,6 +238,36 @@
           "totalQuestions": 1
         }
       ]
+    },
+    {
+      "id": "850d",
+      "name": "Anusha G",
+      "email": "anua00948@gmail.com",
+      "password": "Anusha",
+      "address": "VenkatagiriKota",
+      "imageUrl": "http://localhost:3000/images/Anu.jpg",
+      "scores": [
+        {
+          "technology": "CSS",
+          "score": 6,
+          "totalQuestions": 6
+        }
+      ]
+    },
+    {
+      "id": "38b8",
+      "name": "Prathibha Vulavala",
+      "email": "prathibhap870@gmail.com",
+      "password": "Prathibha",
+      "address": "Pungunr",
+      "imageUrl": "http://localhost:3000/images/Krishna.jpg",
+      "scores": [
+        {
+          "technology": "CSS",
+          "score": 6,
+          "totalQuestions": 6
+        }
+      ]
     }
   ]
 }

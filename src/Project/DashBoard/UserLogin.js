@@ -37,10 +37,13 @@ const UserLogin = ({ onLogin }) => {
 
   return (
     <>
-      <nav className="navbar">
-        <ul className="navbar-links">
+      <nav className="navbar1">
+      <h1 className="navbar1-logo">Lyros Technologies Pvt Ltd-CMMI Level 3</h1>
+        <ul className="navbar1-links">
+        
           <li><Link to="/">Home</Link></li>
           <li><Link to="/admin-login">Admin Login</Link></li>
+          <li><Link to="/user-login">Sign Up</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           

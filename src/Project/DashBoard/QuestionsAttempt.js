@@ -41,14 +41,57 @@ const QuestionsAttempt = () => {
 
     const handleFinish = async () => {
         let totalScore = 0;
+        
+       
         questions.forEach((question, index) => {
             if (answers[index] === question.answer) {
                 totalScore += 1;
             }
         });
         setScore(totalScore);
-        alert(`Your score is ${totalScore} out of ${questions.length}`);
+    
+        try {
+           
+            const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    
+           
+            if (!loggedInUser || !loggedInUser.id) {
+                console.error('User is not logged in or ID is missing');
+                alert('There was a problem retrieving your user data. Please log in again.');
+                navigate('/login'); 
+                return; 
+            }
+    
+            const userId = loggedInUser.id;  
+    
+           
+            const response = await axios.get(`http://localhost:3000/users/${userId}`);
+            const user = response.data;
+    
+           
+            const scores = Array.isArray(user.scores) ? user.scores : [];
+    
+            
+            const updatedUser = {
+                ...user,
+                scores: [
+                    ...scores,
+                    {
+                        technology: technology,      
+                        score: totalScore,            
+                        totalQuestions: questions.length  
+                    }
+                ]
+            };
+            await axios.put(`http://localhost:3000/users/${userId}`, updatedUser);
+    
+            console.log('Score saved successfully!');
+            alert(`Your score is ${totalScore} out of ${questions.length}`);
+        } catch (error) {
+            console.error('Error saving score:', error);
+        }
     };
+    
 
     if (score !== null) {
         return (

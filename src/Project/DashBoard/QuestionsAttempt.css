@@ -4,7 +4,8 @@
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    max-width: 700px;
+    width: 100vw;
+    height: 100vh;
     margin: 2rem auto;
     text-align: center;
     perspective: 1000px;
@@ -29,6 +30,9 @@
     background: linear-gradient(135deg, #6a82fb, #fc5c7d);
     color: white;
     padding: 2rem;
+    margin-left: 550px;
+    width: 700px;
+    height: 600px;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -46,17 +50,18 @@
 
 /* Question text */
 .question-text {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     margin-bottom: 2rem;
 }
 
 /* Options */
 .option-container {
     margin: 1rem 0;
+    text-align: center;
 }
 
 .option-label {
-    font-size: 1.1rem;
+    font-size: 2.7rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -64,12 +69,13 @@
 
 .option-label input {
     margin-right: 0.75rem;
+    text-align: center;
     transform: scale(1.2);
 }
 
 /* Button container */
 .button-container {
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 /* Next and Finish buttons */
