@@ -268,6 +268,67 @@
           "totalQuestions": 6
         }
       ]
+    },
+    {
+      "id": "ca42",
+      "name": "Pavan",
+      "email": "pavan@gmail.com",
+      "password": "pavan",
+      "address": "Nellore",
+      "imageUrl": "http://localhost:3000/images/Loki1.jpg",
+      "scores": [
+        {
+          "technology": "CSS",
+          "score": 6,
+          "totalQuestions": 6
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "2151",
+      "title": "SW",
+      "company": "Wipro",
+      "description": "Ntg",
+      "location": "Bng",
+      "skills": [
+        "Java"
+      ]
+    }
+  ],
+  "application": [
+    {
+      "id": "8379",
+      "jobId": "2151",
+      "applicantName": "Lokesh",
+      "applicantEmail": "marripatilokesh237@gmail.com",
+      "contactNumber": "9100656740"
+    },
+    {
+      "id": "4dbd",
+      "jobId": "2151",
+      "applicantName": "Loki",
+      "applicantEmail": "marripatilokesh93@gmail.com",
+      "contactNumber": "8217652262",
+      "resume": {}
+    },
+    {
+      "id": "74ca",
+      "jobId": "2151",
+      "applicantName": "Anusha",
+      "applicantEmail": "anua00948@gmail.com",
+      "contactNumber": "06305375946",
+      "resume": "http://localhost:3000/images/Lokesh M (1).pdf"
+    },
+    {
+      "id": "28c3",
+      "jobId": "2151",
+      "jobTitle": "SW",
+      "applicantName": "Anusha G",
+      "applicantEmail": "anua00948@gmail.com",
+      "contactNumber": "06305375946",
+      "resume": "http://localhost:3000/images/Lokesh M (1).pdf"
     }
   ]
 }
