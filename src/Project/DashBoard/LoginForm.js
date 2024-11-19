@@ -21,7 +21,7 @@ const LoginForm = ({ onLogin }) => {
     event.preventDefault();
 
     try {
-      const response = await axios.get('http://localhost:3000/images'); // Ideally, should be a POST request for login
+      const response = await axios.get('http://localhost:3000/images'); 
       const users = response.data;
       const user = users.find(u => u.email === email && u.jobId === jobId && u.password === password);
 
